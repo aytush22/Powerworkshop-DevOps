@@ -94,7 +94,8 @@ This guide provides step-by-step instructions for setting up Docker, building an
     ![image](https://github.com/user-attachments/assets/2e408814-e47d-4ca3-99a4-21ba1c2006a3)
     
  Ensure you use a personal access token instead of a password for GitHub authentication.
- Screenshots are issued as myscreenshots
+ 
+  Screenshots are issued as myscreenshots
 
 
 
