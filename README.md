@@ -96,6 +96,33 @@ This guide provides step-by-step instructions for setting up Docker, building an
  Ensure you use a personal access token instead of a password for GitHub authentication.
  
   Screenshots are issued as myscreenshots
+  ###### Steps to create github workflows
+      1. Create a github action workflows
+      ```bash
+       mkdir -p .github/workflows
+       nano .github/workflows/hello-world.yml
+       ![image](https://github.com/user-attachments/assets/12cd0a9d-dbe7-4b8c-854f-2259a1484639)
+       
+      2. Push to repository
+      ```bash
+        git add .github/workflows/hello-world.yml
+        git commit -m "Add hello-world workflow"
+        git fetch origin
+        git merge origin/main
+        git push origin main
+        
+       3.  Create a workflow for Docker
+       ```bash
+        nano .github/workflows/docker.yml
+        ![image](https://github.com/user-attachments/assets/a9805834-7b70-4178-a96d-177b7603f5b9)
+
+        4. Push to repository
+        ```bash 
+        git add .github/workflows/docker.yml
+        git commit -m "Add Docker workflow"
+        git push origin main
+        ![image](https://github.com/user-attachments/assets/28232189-9bd4-4f34-affb-b9ef0c7d9a97)
+
 
 
 
