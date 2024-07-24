@@ -1,0 +1,26 @@
+version: '3'
+services:
+  web:
+    image: <your-docker-hub-username>/php-hello-world
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    environment:
+      - COMPOSER_HOME=app/composer
+      - COMPOSER_CACHE_DIR=app/composer/cache
+    volumes:
+      - .:/app
+
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=hello_world
+      - MYSQL_USER=hello_world
+      - MYSQL_PASSWORD=hello_world
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:
