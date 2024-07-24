@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: <your-docker-hub-username>/php-hello-world
+    image: ayush4910/php-hello-world
     ports:
       - "80:80"
     depends_on:
