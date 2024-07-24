@@ -123,6 +123,19 @@ This guide provides step-by-step instructions for setting up Docker, building an
         git push origin main
         ![image](https://github.com/user-attachments/assets/28232189-9bd4-4f34-affb-b9ef0c7d9a97)
 
+######Verify docker images
+
+    1. Check for docker images
+    ```bash
+    sudo docker images
+    ![image](https://github.com/user-attachments/assets/08ffe638-f2e3-45e5-a699-06356ed05cc8)
+
+    2. Run docker images
+    ```bash
+     sudo docker run -d -p 8080:80 ayush4910/php-hello-world:latest
+     ![image](https://github.com/user-attachments/assets/071022f3-b870-4926-bf5b-5b1461a2f7c9)
+    
+
 
 
 
